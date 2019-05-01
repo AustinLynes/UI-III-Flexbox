@@ -3,19 +3,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,44 +11,283 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+	box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Start Of Index.html */
+
+/* ************************************** */
+
+/* ************************************** */
+
+.page {
+	width: 95%;
+	padding:0px 5px 5px 5px;
+	box-sizing: border-box;
+	margin:0 auto;
+}
+
+
+.headercss {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	left: 0;
+	right: 0;
+	width: 100%;
+	background: linear-gradient(lightgrey, white);
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.nav-item-h {
+	text-decoration: none;
+	padding: 10px 10px 10px 10px;
+	box-sizing: border-box;
+	margin: 20px;
+	color:grey;
+}
+
+.nav-item-h:hover{
+	color:black;
+	border:1px solid grey;
+	background:linear-gradient(grey, white);
+	border-radius: 20px;
+}
+
+h1 {
+	font-size: 64px;
+	padding-top: 100px;
+	box-sizing: border-box;
+}
+.h1-vision{
+	padding:10px;
+	box-sizing: border-box;
+	margin:0 auto;
+}
+h3, h4{
+	font-size:18px;
+}
+
+.i-text {
+	display: block;
+	text-align: center;
+}
+
+header {
+	padding-top: 60px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.start-button {
+	position: relative;
+	left: 20px;
+	width: 200px;
+}
+
+.innovation-img {
+	padding: 40px;
+	box-sizing: border-box;
+}
+
+.main-text {
+	display: flex;
+}
+
+.body {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.middle-img {
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+	margin: 5px;
+}
+
+.text-area{
+	padding:5px;
+	padding-top:50px;
+	box-sizing: border-box;
+	margin:5px;
+}
+.text-area2{
+	padding:5px;
+	padding-bottom:50px;
+	box-sizing: border-box;
+	margin:5px;
+}
+
+.contact-info{
+	margin:10px;
+
+}
+
+footer{
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align: center;
+}
+.services-header-img{
+	margin-top:80px;
+	width:100%;
+}
+.main-container-service{
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	display:flex;
+	flex-wrap:wrap;
+	padding:20px 0;
+	box-sizing: border-box;
+	margin: 20px 0;
+	justify-content: space-between;
+}
+h5{
+	padding:10px;
+	box-sizing:border-box;
+	margin:5px;
+}
+h6{
+	font-size:18px;
+}
+.media-area{
+	background:#eeeee7;
+	border:1px solid black;
+	padding: 5px;
+	box-sizing: border-box;
+	margin:7px;
+	width:48%;
+}
+
+.service-p{
+	font-size: 16px;
+	padding:10px;
+	box-sizing: border-box;
+	margin: 5px;
+}
+.learn-more-btn{
+	width:150px;
+	background:white;
+	padding:10px;
+	box-sizing: border-box;
+	margin:5px;
+	border:1px solid grey;
+	border-radius: 5px;
+	font-size: 10px;
+}
+.learn-more-btn:hover{
+	color:lightseagreen;
+	border:1px solid lightseagreen;
+
+}
+.fun-facts{
+	display:flex;
+}
+
+
+h2{
+	margin-top:20px;
+	font-size: 24px;
+}
+ul.a{
+	padding:15px;
+	box-sizing: border-box;
+	line-height: 2;
+	list-style-type: disc;
+	margin-top:10px;
+	
+}
